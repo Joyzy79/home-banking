@@ -1,0 +1,14 @@
+<mat-card class="withdraw-card">
+    <div class="balance">
+      Saldo Atual: € 0.00
+    </div>
+    <mat-form-field appearance="outline" class="amount-field">
+      <mat-label>Valor a Retirar</mat-label>
+      <input matInput type="number" placeholder="Digite o valor" [(ngModel)]="withdrawAmount">
+    </mat-form-field>
+    <div class="actions">
+      <mat-icon class="withdraw-icon">money_off</mat-icon>
+      <button mat-raised-button color="primary" (click)="withdrawFunds()">Retirar</button>
+    </div>
+  </mat-card>
+  

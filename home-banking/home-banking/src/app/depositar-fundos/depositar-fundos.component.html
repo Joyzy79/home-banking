@@ -1,0 +1,14 @@
+<mat-card class="deposit-card">
+    <div class="balance">
+      Saldo Atual: € 0.00
+    </div>
+    <mat-form-field appearance="outline" class="amount-field">
+      <mat-label>Valor a Depositar</mat-label>
+      <input matInput type="number" placeholder="Digite o valor" [(ngModel)]="depositAmount">
+    </mat-form-field>
+    <div class="actions">
+      <mat-icon class="deposit-icon">attach_money</mat-icon>
+      <button mat-raised-button color="primary" (click)="depositFunds()">Depositar</button>
+    </div>
+  </mat-card>
+  

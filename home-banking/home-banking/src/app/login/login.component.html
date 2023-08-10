@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+
+<div>
+    <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+      <mat-form-field appearance="outline">
+        <mat-label>Nome de Usuário</mat-label>
+        <input matInput formControlName="username" required>
+        <mat-error *ngIf="loginForm.controls['username'].hasError('required')">Nome de usuário é obrigatório</mat-error>
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Senha</mat-label>
+        <input matInput type="password" formControlName="password" required>
+        <mat-error *ngIf="loginForm.controls['password'].hasError('required')">Senha é obrigatória</mat-error>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Entrar</button>
+    </form>
+  </div>
+  
+  </html>

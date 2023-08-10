@@ -1,0 +1,17 @@
+<mat-card class="balance-card">
+    <div class="balance">
+      Saldo Atual: € 1000.00
+    </div>
+  </mat-card>
+  
+  <div class="expense-list">
+    <mat-card class="expense-card" *ngFor="let expense of expenses">
+      <div class="expense-item">
+        <mat-icon class="expense-icon">{{ expense.icon }}</mat-icon>
+        <span class="expense-name">{{ expense.name }}</span>
+        <span class="expense-amount">{{ expense.amount }}</span>
+      </div>
+      <div class="expense-date">{{ expense.date }}</div>
+    </mat-card>
+  </div>
+  
