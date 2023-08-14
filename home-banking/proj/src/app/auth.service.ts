@@ -14,6 +14,8 @@ export class AuthService {
 
   logout(): void {
     this.loggedIn = false;
+    console.log();
+
   }
 
   isLoggedIn(): boolean {

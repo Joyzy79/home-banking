@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./movimentacao.component.css']
 })
 export class MovimentacaoComponent {
-  saldoBancario: number = 0;
+  saldoBancario: number = 1000;
   movimentos = [
     { icone: 'shopping_cart', item: 'Mercado', valor: 100, data: '2023-08-10' },
     { icone: 'flash_on', item: 'Energia', valor: 50, data: '2023-08-09' },

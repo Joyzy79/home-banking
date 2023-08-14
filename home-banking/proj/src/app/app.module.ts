@@ -29,13 +29,14 @@ const routes: Routes = [
 ];
 
 @NgModule({
+
   declarations: [
     AppComponent,
     LoginComponent,
     MovimentacaoComponent,
     OperacoesComponent,
     ContacteNosComponent,
-    AlterarSenhaComponent,
+    AlterarSenhaComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +55,7 @@ const routes: Routes = [
     BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
 localStorage

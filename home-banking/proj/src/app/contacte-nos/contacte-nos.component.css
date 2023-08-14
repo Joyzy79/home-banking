@@ -1,23 +1,45 @@
-.contacte-nos {
-    padding: 20px;
-  }
+.contacte-nos-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+ 
+  height: 100vh;
+  margin-top: 5px;
+}
+.card {
+  padding: 20px;
+  width: 400px;
+  background-color: rgb(222 9 149 / 37%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(142 123 167);
   
-  .contacte-nos h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .contacte-nos ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .contacte-nos li {
-    margin-bottom: 5px;
-  }
-  
-  .contacte-nos a {
-    text-decoration: none;
-    color: #007BFF;
-  }
-  
+}
+
+ h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+p {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card li {
+  margin-bottom: 5px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #8604b5;
+}
+mat-button{
+  color: #310d3d;
+}

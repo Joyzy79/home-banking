@@ -1,22 +1,38 @@
-<div class="movimentacao-container">
+<div class="operacoes-container">
   <div class="saldo-card">
     <span>Saldo Bancário: R$ {{ saldoBancario }}</span>
   </div>
 
-  <h2>Movimentação Bancária</h2>
-  <div class="movimentacao-list">
-    <div class="card" *ngFor="let movimento of movimentos">
-      <div class="card-content">
-        <div class="icon">
-          <mat-icon>{{ movimento.icone }}</mat-icon>
-        </div>
-        <div class="item">{{ movimento.item }}</div>
-        <div class="valor">R$ {{ movimento.valor }}</div>
-      </div>
-      <div class="data">{{ movimento.data }}</div>
-    </div>
-  </div>
-</div>
+  <h2>Operações</h2>
+  <mat-card>
+    <mat-tab-group>
+      <mat-tab label="Depósito">
+        <h2>Depósito de Fundos</h2>
+        <form [formGroup]="depositoForm" (ngSubmit)="realizarDeposito()">
+          <mat-form-field>
+            <mat-label>Valor do Depósito</mat-label>
+            <input matInput type="number" formControlName="valor" placeholder="Informe o valor">
+            <mat-error *ngIf="depositoForm.get('valor')?.hasError('required')">Valor é obrigatório</mat-error>
+            <mat-error *ngIf="depositoForm.get('valor')?.hasError('min')">Valor deve ser maior ou igual a 0</mat-error>
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit">Realizar Depósito</button>
+        </form>
+      </mat-tab>
+      <mat-tab label="Retirada">
+        <h2>Retirada de Fundos</h2>
+        <form [formGroup]="retiradaForm" (ngSubmit)="realizarRetirada()">
+          <mat-form-field>
+            <mat-label>Valor da Retirada</mat-label>
+            <input matInput type="number" formControlName="valor" placeholder="Informe o valor">
+            <mat-error *ngIf="retiradaForm.get('valor')?.hasError('required')">Valor é obrigatório</mat-error>
+            <mat-error *ngIf="retiradaForm.get('valor')?.hasError('min')">Valor deve ser maior ou igual a 0</mat-error>
+          </mat-form-field>
+          <button mat-raised-button color="warn" type="submit">Realizar Retirada</button>
+        </form>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+   
 
 
 
