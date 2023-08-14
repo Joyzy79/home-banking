@@ -1,0 +1,23 @@
+<div class="movimentacao-container">
+  <div class="saldo-card">
+    <span>Saldo Bancário: R$ {{ saldoBancario }}</span>
+  </div>
+
+  <h2>Movimentação Bancária</h2>
+  <div class="movimentacao-list">
+    <div class="card" *ngFor="let movimento of movimentos">
+      <div class="card-content">
+        <div class="icon">
+          <mat-icon>{{ movimento.icone }}</mat-icon>
+        </div>
+        <div class="item">{{ movimento.item }}</div>
+        <div class="valor">R$ {{ movimento.valor }}</div>
+      </div>
+      <div class="data">{{ movimento.data }}</div>
+    </div>
+  </div>
+</div>
+
+
+
+  

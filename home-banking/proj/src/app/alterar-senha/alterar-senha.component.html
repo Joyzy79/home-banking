@@ -1,0 +1,9 @@
+<h2>Alterar Senha</h2>
+<form [formGroup]="senhaForm" (ngSubmit)="alterarSenha()">
+  <mat-form-field>
+    <mat-label>Nova Senha</mat-label>
+    <input matInput type="password" formControlName="novaSenha">
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit">Alterar Senha</button>
+</form>
+

@@ -1,0 +1,30 @@
+/* Defina o formulário como um card e centralize-o */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  background-color: rgb(175, 230, 220);
+}
+
+.card-principal {
+
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #a32f9b;
+  background-color: #e257d9a2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Aplique margem ao botão para espaçamento */
+.button-container {
+  margin-top: 20px;
+}
+
+.u {
+  text-decoration: none;
+  font-size: 30px;
+  color: #a70e71;
+}

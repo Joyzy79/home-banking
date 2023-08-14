@@ -1,0 +1,23 @@
+.contacte-nos {
+    padding: 20px;
+  }
+  
+  .contacte-nos h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contacte-nos ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .contacte-nos li {
+    margin-bottom: 5px;
+  }
+  
+  .contacte-nos a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
